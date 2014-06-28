@@ -1,0 +1,91 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<tiles-definitions>
+    
+    <!--definition name="contact" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+    </definition-->
+    
+    <definition name="login"  template="/resources/html/login.html">
+    </definition>
+    
+    <!--
+    <definition name="register-success" extends="master">
+        <put-attribute name="title" value="Wibug:  Account Successfully Created" type="string" />
+        <put-attribute name="content" type="template" value="/WEB-INF/views/register-successful.jsp" />
+    </definition>
+    -->
+    
+    <definition name="report-view" template="/WEB-INF/view/report-view.jsp">
+    </definition>
+    
+    <definition name="error" template="/WEB-INF/view/error.jsp">
+    </definition>
+    
+    <definition name="redirect" template="/WEB-INF/templates/redirect.jsp">
+    </definition>
+        
+    <!-- Internal Pages-->
+    <definition name="message" extends="master">
+        <put-attribute name="title" value="Wibug: Account Successfully Created" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/views/message.jsp" />
+    </definition>
+    
+    <definition name="message-list" extends="master">
+        <put-attribute name="title" value="Message List" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/message-manage.jsp" />
+    </definition>
+    
+    <definition name="fans-list" extends="master">
+        <put-attribute name="title" value="Message List" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/fans-manage.jsp" />
+    </definition>
+
+
+    <definition name="staff-list" extends="master">
+        <put-attribute name="title" value="Message List" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/staff-manage.jsp" />
+    </definition>
+    
+    <definition name="tag-list" extends="master">
+        <put-attribute name="title" value="Message List" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/tag-manage.jsp" />
+    </definition>
+    
+    <definition name="report-list" extends="master">
+        <put-attribute name="title" value="Report List" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/report-manage.jsp" />
+    </definition>
+    
+    <definition name="report-detail" extends="master">
+        <put-attribute name="title" value="Report Detail" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/report-detail.jsp" />
+    </definition>
+    
+     <definition name="home" extends="master">
+        <put-attribute name="title" value="Home" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/view/home.jsp" />
+    </definition>
+    
+    <definition name="report" extends="master">
+        <put-attribute name="title" value="Wibug: Account Successfully Created" type="string" />
+        <put-attribute name="body" type="template" value="/WEB-INF/views/report.jsp" />
+    </definition>
+        
+    <definition name="account-info" template="/WEB-INF/view/account-info.jsp">
+    </definition>    
+        
+    <definition name="user-create-admin" template="/WEB-INF/view/user-create.jsp">
+    </definition>
+    
+    
+    <definition name="test" extends="oneCol">
+        <put-attribute name="title" value="Test" />
+        <put-attribute name="body" value="/WEB-INF/view/test.jsp" />
+    </definition>
+</tiles-definitions>

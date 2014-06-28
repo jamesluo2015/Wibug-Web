@@ -1,0 +1,48 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<tiles-definitions>
+    <definition name="base.definition" template="/WEB-INF/layout/masterLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/templates/menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp" />
+    </definition>
+    <definition name="oneCol" template="/WEB-INF/layout/oneColLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/templates/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/templates/footer.jsp" />
+    </definition>
+
+    <definition name="contact" extends="base.definition">
+        <put-attribute name="title" value="Contact Manager" />
+        <put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+    </definition>
+    <definition name="test" extends="oneCol">
+        <put-attribute name="title" value="Test" />
+        <put-attribute name="body" value="/WEB-INF/view/test.jsp" />
+    </definition>
+    
+    <definition name="login" extends="oneCol">
+        <put-attribute name="title" value="登录" />
+        <put-attribute name="body" value="/WEB-INF/view/login.jsp" />
+    </definition>
+    <definition name="index" extends="oneCol">
+        <put-attribute name="title" value="Test" />
+        <put-attribute name="body" value="/WEB-INF/view/index.jsp" />
+    </definition>
+    <definition name="user-manage" extends="master">
+        <put-attribute name="title" value="user-manage" />
+        <put-attribute name="body" value="/WEB-INF/view/user-manage.jsp" />
+    </definition>
+    <definition name="msg-manage" extends="master">
+        <put-attribute name="title" value="msg-manage" />
+        <put-attribute name="body" value="/WEB-INF/view/msg-manage.jsp" />
+    </definition>
+</tiles-definitions>

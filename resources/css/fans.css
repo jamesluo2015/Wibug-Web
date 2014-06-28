@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-6-10, 11:28:06
+    Author     : Administrator
+*/
+
+.sub-title-first-bar{
+    margin-top: 20px;
+    background-color: #EEECEC;
+    padding:10px 10px 10px 10px;
+    border-bottom: 1px solid #c3c3c3;
+  }
+  .sub-title-second-bar{
+    background-color: #f3f3f3;
+    padding:5px 10px 5px 10px;
+    border-bottom: 2px solid #d3d3d3;
+  }
+
+  .fan-list-addTo{
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border:1px solid #000;
+    border-color: #c3c3c3;
+    text-align: left;
+    cursor: pointer; 
+    border-radius: 3px;
+    padding:0 10px 0 10px; 
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  .form-control{
+    width:100px;
+  }
+  /*通用的样式*/
+  .input-style{
+    width:15px;
+    height: 15px;
+  }
+  /*通用的ul*/
+  .ul-style{
+    list-style:none;padding:0;
+  }
+/*  通用的a*/
+  .a-style{
+      color: #526492;
+  }
+  .a-style:hover{
+      color: #526492;
+  }
+
+  /*右边分组的样式*/
+  .group-list{
+    margin-top: 20px;
+    min-height:500px;
+    border-radius:3px;
+    border:1px solid #d3d3d3;
+  }
+  
+  .group-list-li{
+    line-height: 33px;
+  }
+
+  .all-group-list-li{
+    border-bottom: 1px solid #ccc;
+    background-color: #d6d6d6;
+    padding-left: 20px;
+  }
+  .normal-group-list-li{
+    padding-left: 30px;
+  }
+  .black-group-list-li{
+    border-bottom: 1px solid #ccc;
+    background-color: #f0f0f0;
+    padding-left: 20px;
+  }
+.add-group-list-li{
+    border-top: 1px solid #d3d3d3;
+    padding-left: 20px;
+  }
+  
+/*  group操作编辑和删除*/
+  .editGroupName{
+      padding-right:2.5px;
+      color:#666;
+  }
+  .deleteGroupName{
+      padding-right:23px;
+      color:#666;
+  }

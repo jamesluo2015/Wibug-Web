@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+    
+        <context:component-scan base-package="cn.ise.wibug" />
+
+        <mvc:annotation-driven />
+        <mvc:interceptors>
+            <bean class="cn.ise.wibug.interceptor.ActionInterceptor"/>
+            <bean class="cn.ise.wibug.interceptor.AjaxActionInterceptor"/>
+            <bean class="cn.ise.wibug.interceptor.AuthenticationAndAuthorizationInterceptor"/>
+            
+            <!--bean class="cn.ise.wibug.interceptor.ExecutionTimeInterceptor"/-->
+        </mvc:interceptors>
+        
+        <mvc:resources mapping="/resources/**"  location="/resources/"/>
+	<!-- Factory bean that creates the Mongo instance -->
+        <!--
+	<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
+		 <property name="host" value="115.29.242.187" />
+                 <property name="port" value="27017" />
+	</bean>
+        -->
+
+	<!-- MongoTemplate for connecting and quering the documents in the database -->
+        <!--
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongo" ref="mongo" />
+		<constructor-arg name="databaseName" value="test" />
+	</bean>
+        -->
+        
+	<!-- Use this post processor to translate any MongoExceptions thrown in @Repository annotated classes
+	<bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+   	<bean id="jspViewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/view/"
+          p:suffix=".jsp" />	
+         -->
+         
+         
+    <!--
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:/dev.properties</value>
+            </list>
+        </property>
+    </bean>
+    -->
+    <!--mvc:annotation-driven/-->
+    
+       
+    <!--
+    <mvc:interceptors>
+        <bean class="cn.edu.nju.software.ise.web.ActionInterceptor"/>
+        <bean class="cn.edu.nju.software.ise.web.AjaxActionInterceptor"/>
+        <bean class="cn.edu.nju.software.ise.web.ExecutionTimeInterceptor"/>
+    </mvc:interceptors>
+    
+    <bean id="messageSource"
+          class="org.springframework.context.support.ResourceBundleMessageSource"
+          p:basename="i18n/message" />
+    <context:component-scan base-package="com.lavany.web.controller"/>
+    -->
+</beans>

@@ -1,0 +1,23 @@
+.wb-pagination{
+    margin: 0;
+}
+.wb-pagination .btn{
+    padding: 4px 8px;
+}
+.wb-pagination > div{
+    display: inline-block;
+    margin-left: 6px;
+}
+.wb-pagination .interval{
+    margin: 0 4px;
+}
+.wb-pagination .page-input{
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    height: 31px;
+    margin-right: 6px;
+    outline: none;
+    text-align: center;
+    width: 40px;
+}

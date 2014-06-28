@@ -1,0 +1,43 @@
+.staff-img{
+  height:80px;
+  width:80px;
+}
+.report-list-li{
+  padding:15px 15px 15px 25px;
+  border-bottom:1px solid #dddcdc
+}
+
+/*通用的workername*/
+.worker-name{
+  padding:10px 0 0 15px;
+}
+
+/*note的样式*/
+.note-value{
+    color: #526492;
+    outline: none;
+    border: none;
+    resize:none;
+    width: 400px;
+}
+.note-value-active{
+    outline: none;
+    border: 1px solid #d3d3d3;
+    width: 400px;
+    height:100px;
+}
+
+/*所有的用来展示的li*/
+.li-item:hover{
+    background-color: #f3f3f3;
+}
+
+/*所有的含有a的li*/
+.li-have-a{
+    cursor:pointer;
+}
+
+/*item其中的textarea*/
+.li-item:hover textarea{
+    background-color: #f3f3f3;
+}
